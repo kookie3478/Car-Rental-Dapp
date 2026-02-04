@@ -3,6 +3,7 @@ import Login from "./pages/LoginPage/Login";
 import OwnerDashboard from "./pages/Owner/Dashboard/OwnerDashboard";
 import RenterDashboard from "./pages/Renter/Dashboard/RenterDashboard";
 import ProtectedRoute from "./components/ProtectedRoute";
+import OwnerCars from "./pages/Owner/Cars/OwnerCars";
 
 export default function App() {
   return (
@@ -28,6 +29,7 @@ export default function App() {
             </ProtectedRoute>
           }
         />
+        <Route path="/owner/cars" element={<OwnerCars />} />
       </Routes>
     </BrowserRouter>
   );
